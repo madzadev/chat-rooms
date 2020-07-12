@@ -12,6 +12,10 @@ const io = socketio(server);
 
 io.on("connection", (socket) => {
   console.log("User has connected");
+
+  socket.on("join", ({ name, room }, callback) => {
+    console.log(name, room);
+  });
   socket.on("disconnected", () => {
     console.log("User had left");
   });
