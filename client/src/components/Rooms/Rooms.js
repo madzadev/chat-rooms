@@ -8,6 +8,7 @@ const Rooms = () => {
       <p>Room 2</p>
       <p>Room 3</p>
       <p>Room 4</p>
+      <p>Room 4</p>
     </>
   );
 };
