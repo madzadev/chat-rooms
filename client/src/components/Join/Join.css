@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 html,
 body {
   font-family: "Roboto", sans-serif;
@@ -9,17 +13,13 @@ body {
   height: 100vh;
 }
 
-* {
-  box-sizing: border-box;
-}
-
 .joinOuterContainer {
   display: flex;
   justify-content: center;
   text-align: center;
   height: 100vh;
   align-items: center;
-  background-color: #1a1a1d;
+  background-color: #161822;
 }
 
 .joinInnerContainer {
@@ -27,9 +27,10 @@ body {
 }
 
 .joinInput {
-  border-radius: 0;
+  border-radius: 20px;
   padding: 15px 20px;
   width: 100%;
+  border: none;
 }
 
 .heading {
@@ -43,12 +44,13 @@ body {
   color: #fff !important;
   text-transform: uppercase;
   text-decoration: none;
-  background: #2979ff;
+  background: #00d300;
   padding: 20px;
-  border-radius: 5px;
+  /* border-radius: 25px; */
   display: inline-block;
   border: none;
   width: 100%;
+  font-size: 16px;
 }
 
 .mt-20 {
