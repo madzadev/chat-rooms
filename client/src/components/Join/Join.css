@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
+
 * {
   box-sizing: border-box;
 }
@@ -11,6 +13,10 @@ body {
 
 #root {
   height: 100vh;
+}
+
+.heading {
+  font-family: "Montserrat", sans-serif;
 }
 
 .joinOuterContainer {
@@ -27,10 +33,17 @@ body {
 }
 
 .joinInput {
-  border-radius: 20px;
+  border-radius: 5px;
   padding: 15px 20px;
   width: 100%;
   border: none;
+  background-color: #161822;
+  border: 2px solid rgb(51, 51, 51);
+  color: white;
+}
+
+.joinInput:hover {
+  border: 2px solid rgb(75, 75, 75);
 }
 
 .heading {
@@ -44,13 +57,18 @@ body {
   color: #fff !important;
   text-transform: uppercase;
   text-decoration: none;
-  background: #00d300;
+  background: #4a61dd;
   padding: 20px;
-  /* border-radius: 25px; */
+  border-radius: 5px;
   display: inline-block;
   border: none;
   width: 100%;
   font-size: 16px;
+}
+
+.button:hover {
+  background: #4257cf;
+  cursor: pointer;
 }
 
 .mt-20 {
