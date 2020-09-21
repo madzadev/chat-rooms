@@ -1,19 +1,38 @@
-.outerContainer {
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
+
+.page-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #1a1a1d;
+  background-color: #161822;
+  font-family: "Montserrat", sans-serif;
 }
 
-.container {
-  display: flex;
+.chat-wrapper {
+  display: grid;
+  grid-template-columns: 300px 500px;
+  width: 800px;
+  margin: 0 auto;
+  border: 1px solid white;
+  background-color: white;
+  min-height: 50vh;
+}
+
+.list-wrapper {
+  padding: 20px;
+  background-color: #161822;
+  color: white;
+}
+
+.messages-wrapper {
+  /* display: flex;
   flex-direction: column;
   justify-content: space-between;
   background: #ffffff;
   border-radius: 8px;
   height: 60%;
-  width: 35%;
+  width: 35%; */
 }
 
 @media (min-width: 320px) and (max-width: 480px) {

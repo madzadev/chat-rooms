@@ -1,6 +1,7 @@
 .form {
   display: flex;
   border-top: 2px solid #d3d3d3;
+  vertical-align: bottom;
 }
 
 .input {
@@ -21,7 +22,7 @@ select:focus {
   color: #fff !important;
   text-transform: uppercase;
   text-decoration: none;
-  background: #2979ff;
+  background: #4a61dd;
   padding: 20px;
   display: inline-block;
   border: none;
