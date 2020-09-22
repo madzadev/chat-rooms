@@ -60,12 +60,36 @@
   color: #353535;
 }
 
-.backgroundBlue {
+.backgroundOrange {
   background: var(--orange-color);
-  border-radius: 20px 20px 0 20px;
+  border-radius: 10px 20px 0 20px;
+}
+
+.profile-box {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+
+  display: grid;
+  place-items: center;
+}
+
+.user {
+  /* background: var(--orange-color);
+  background: lightgrey; */
+  margin-left: 10px;
+}
+
+.robot {
+  margin-right: 10px;
+}
+
+.profile-icon {
+  width: 50px;
+  height: 50px;
 }
 
 .backgroundLight {
   background: #f3f3f3;
-  border-radius: 20px 20px 20px 0;
+  border-radius: 20px 10px 20px 0;
 }

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Helmet } from "react-helmet";
 import queryString from "query-string";
 import io from "socket.io-client";
 
@@ -17,7 +18,8 @@ const Chat = ({ location }) => {
   const [messages, setMessages] = useState([]);
   let [users, setUsers] = useState([]);
 
-  const ENDPOINT = "https://react-node-socket-io-chat-app.herokuapp.com/";
+  // const ENDPOINT = "https://react-node-socket-io-chat-app.herokuapp.com/";
+  const ENDPOINT = "http://localhost:5000";
 
   useEffect(() => {
     const { name, room } = queryString.parse(location.search);
@@ -49,7 +51,7 @@ const Chat = ({ location }) => {
       });
       setUsers(users);
     });
-  }, [name]);
+  }, [message]);
 
   const sendMessage = (event) => {
     event.preventDefault();
@@ -60,6 +62,9 @@ const Chat = ({ location }) => {
 
   return (
     <div className="page-wrapper">
+      {/* <Helmet>
+        <title>Chat room: {room}</title>
+      </Helmet> */}
       <div className="chat-wrapper">
         <div className="list-wrapper">
           <h1>Users:</h1>

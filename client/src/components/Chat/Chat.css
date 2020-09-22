@@ -23,18 +23,8 @@
 .list-wrapper {
   padding: 20px;
   background-color: var(--background-color);
-  /* background-color: rgb(30, 37, 56); */
-  color: white;
-}
-
-.messages-wrapper {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background: #ffffff;
-  border-radius: 8px;
-  height: 60%;
-  width: 35%; */
+  background-color: rgb(233, 233, 233);
+  color: rgb(29, 29, 29);
 }
 
 @media (min-width: 320px) and (max-width: 480px) {

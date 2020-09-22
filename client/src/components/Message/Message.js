@@ -1,5 +1,7 @@
 import React from "react";
 import ReactEmoji from "react-emoji";
+import ProfileIcon from "./../../icons/profile.png";
+import RobotIcon from "./../../icons/robot.png";
 
 import "./Message.css";
 
@@ -12,14 +14,20 @@ const Message = ({ message: { user, text }, name }) => {
   }
   return isSentByCurrentUser ? (
     <div className="messageContainer justifyEnd">
-      <div className="messageBox backgroundBlue">
+      <div className="messageBox backgroundOrange">
         <p className="messageText colorWhite">{ReactEmoji.emojify(text)}</p>
       </div>
-      <p className="sentText pl-10">{trimmedName}</p>
+      <div className="profile-box user">
+        <img className="profile-icon" src={ProfileIcon} alt="img" />
+        {/* <p className="sentText pl-10">{trimmedName}</p> */}
+      </div>
     </div>
   ) : (
     <div className="messageContainer justifyStart">
-      <p className="sentText pr-10">{user}</p>
+      {/* <p className="sentText pr-10">{user}</p> */}
+      <div className="profile-box robot">
+        <img className="profile-icon" src={RobotIcon} alt="img" />
+      </div>
       <div className="messageBox backgroundLight">
         <p className="messageText colorDark">{ReactEmoji.emojify(text)}</p>
       </div>
