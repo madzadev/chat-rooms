@@ -7,7 +7,7 @@ import "./InfoBar.css";
 
 const InfoBar = (props) => {
   return (
-    <div className="infoBar">
+    <div className="info-bar">
       <div className="leftInnerContainer">
         <img src={onlineIcon} alt="online-img" className="onlineIcon" />
         <h3>Room name: {props.room}</h3>

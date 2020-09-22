@@ -67,4 +67,5 @@ io.on("connection", (socket) => {
 
 server.listen(PORT, () => {
   console.log(`Server has started on port: ${PORT}`);
+  console.log(Object.keys(io.sockets.sockets));
 });

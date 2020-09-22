@@ -1,3 +1,5 @@
+@import "../../App.css";
+
 .form {
   display: flex;
   border-top: 2px solid #d3d3d3;
@@ -18,13 +20,19 @@ select:focus {
   outline: none;
 }
 
-.sendButton {
+.send-button {
   color: #fff !important;
   text-transform: uppercase;
   text-decoration: none;
-  background: #4a61dd;
+  background: var(--purple-color);
   padding: 20px;
   display: inline-block;
   border: none;
   width: 20%;
+  border-radius: 10px;
+}
+
+.send-button:hover {
+  background: var(--purple-color-hover);
+  cursor: pointer;
 }

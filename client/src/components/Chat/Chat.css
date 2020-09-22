@@ -1,27 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
+@import "../../App.css";
 
 .page-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #161822;
+  background-color: var(--background-color);
   font-family: "Montserrat", sans-serif;
 }
 
 .chat-wrapper {
   display: grid;
-  grid-template-columns: 300px 500px;
-  width: 800px;
+  grid-template-columns: 300px 700px;
+  width: 1000px;
   margin: 0 auto;
-  border: 1px solid white;
+  border: 1px solid var(--grey-color);
   background-color: white;
-  min-height: 50vh;
+  height: 70vh;
 }
 
 .list-wrapper {
   padding: 20px;
-  background-color: #161822;
+  background-color: var(--background-color);
   color: white;
 }
 

@@ -1,8 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
-
-* {
-  box-sizing: border-box;
-}
+@import "../../App.css";
 
 html,
 body {
@@ -25,7 +22,7 @@ body {
   text-align: center;
   height: 100vh;
   align-items: center;
-  background-color: #161822;
+  background-color: var(--background-color);
 }
 
 .joinInnerContainer {
@@ -37,7 +34,7 @@ body {
   padding: 15px 20px;
   width: 100%;
   border: none;
-  background-color: #161822;
+  background-color: var(--background-color);
   border: 2px solid rgb(51, 51, 51);
   color: white;
 }

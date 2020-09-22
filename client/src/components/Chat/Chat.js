@@ -53,7 +53,10 @@ const Chat = ({ location }) => {
         <div className="list-wrapper">
           <h1>Users:</h1>
           <h3>{name}</h3>
-          <h3>People2</h3>
+          {/* {io.clients.map((e) => {
+            return <h3>{e}</h3>;
+          })} */}
+
           <h3>People3</h3>
           <h3>People4</h3>
           <h3>People5</h3>
