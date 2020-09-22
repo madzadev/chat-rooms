@@ -15,6 +15,7 @@ const Chat = ({ location }) => {
   const [room, setRoom] = useState("");
   const [message, setMessage] = useState("");
   const [messages, setMessages] = useState([]);
+  const [users, setUsers] = useState([]);
 
   const ENDPOINT = "https://react-node-socket-io-chat-app.herokuapp.com/";
 
@@ -39,6 +40,13 @@ const Chat = ({ location }) => {
       setMessages([...messages, message]);
     });
   }, [messages]);
+
+  useEffect(() => {
+    socket.on("roomData", (user) => {
+      setUsers([...users, user]);
+      console.log(user.users);
+    });
+  }, [users]);
 
   const sendMessage = (event) => {
     event.preventDefault();
