@@ -62,9 +62,9 @@ const Chat = ({ location }) => {
 
   return (
     <div className="page-wrapper">
-      {/* <Helmet>
+      <Helmet>
         <title>Chat room: {room}</title>
-      </Helmet> */}
+      </Helmet>
       <div className="chat-wrapper">
         <div className="list-wrapper">
           <h1>Users:</h1>
