@@ -1,6 +1,7 @@
 @import "../../App.css";
 
 .messages {
+  height: 420px;
   padding: 5% 0;
   overflow: auto;
   flex: auto;

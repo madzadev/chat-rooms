@@ -1,17 +1,24 @@
 @import "../../App.css";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
 
 .form {
   display: flex;
-  border-top: 2px solid #d3d3d3;
+  border-top: 1px solid #d3d3d3;
   vertical-align: bottom;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
 .input {
   border: none;
-  border-radius: 0;
-  padding: 5%;
+  border-radius: 40px;
+  padding: 0 20px;
   width: 80%;
-  font-size: 1.2em;
+  height: 60px;
+  font-family: "Montserrat", sans-serif;
+  /* font-size: 1.2em; */
+  background-color: rgb(241, 241, 241);
+  font-size: 0.9em;
 }
 
 input:focus,
@@ -28,8 +35,10 @@ select:focus {
   padding: 20px;
   display: inline-block;
   border: none;
-  width: 20%;
-  border-radius: 10px;
+  width: 150px;
+  height: 60px;
+  border-radius: 20px;
+  font-family: "Montserrat", sans-serif;
 }
 
 .send-button:hover {

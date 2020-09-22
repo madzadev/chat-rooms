@@ -15,7 +15,7 @@ const Chat = ({ location }) => {
   const [room, setRoom] = useState("");
   const [message, setMessage] = useState("");
   const [messages, setMessages] = useState([]);
-  const [users, setUsers] = useState([]);
+  let [users, setUsers] = useState([]);
 
   const ENDPOINT = "https://react-node-socket-io-chat-app.herokuapp.com/";
 
@@ -43,10 +43,13 @@ const Chat = ({ location }) => {
 
   useEffect(() => {
     socket.on("roomData", (user) => {
-      setUsers([...users, user]);
-      console.log(user.users);
+      users = [];
+      user.users.forEach((el) => {
+        users.push(el.name);
+      });
+      setUsers(users);
     });
-  }, [users]);
+  }, [name]);
 
   const sendMessage = (event) => {
     event.preventDefault();
@@ -60,14 +63,15 @@ const Chat = ({ location }) => {
       <div className="chat-wrapper">
         <div className="list-wrapper">
           <h1>Users:</h1>
-          <h3>{name}</h3>
-          {/* {io.clients.map((e) => {
-            return <h3>{e}</h3>;
-          })} */}
+          {/* <h3>{name}</h3> */}
+          {users.map((el) => {
+            console.log(el);
+            return <h3>{el}</h3>;
+          })}
 
-          <h3>People3</h3>
+          {/* <h3>People3</h3>
           <h3>People4</h3>
-          <h3>People5</h3>
+          <h3>People5</h3> */}
         </div>
         <div className="messages-wrapper">
           <InfoBar room={room} />

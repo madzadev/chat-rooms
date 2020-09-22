@@ -12,8 +12,8 @@
 
 .chat-wrapper {
   display: grid;
-  grid-template-columns: 300px 700px;
-  width: 1000px;
+  grid-template-columns: 300px 900px;
+  width: 1200px;
   margin: 0 auto;
   border: 1px solid var(--grey-color);
   background-color: white;
@@ -23,6 +23,7 @@
 .list-wrapper {
   padding: 20px;
   background-color: var(--background-color);
+  /* background-color: rgb(30, 37, 56); */
   color: white;
 }
 
