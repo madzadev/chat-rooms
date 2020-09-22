@@ -18,8 +18,8 @@ const Chat = ({ location }) => {
   const [messages, setMessages] = useState([]);
   let [users, setUsers] = useState([]);
 
-  // const ENDPOINT = "https://react-node-socket-io-chat-app.herokuapp.com/";
-  const ENDPOINT = "http://localhost:5000";
+  const ENDPOINT = "https://react-node-socket-io-chat-app.herokuapp.com/";
+  // const ENDPOINT = "http://localhost:5000";
 
   useEffect(() => {
     const { name, room } = queryString.parse(location.search);
@@ -68,15 +68,10 @@ const Chat = ({ location }) => {
       <div className="chat-wrapper">
         <div className="list-wrapper">
           <h1>Users:</h1>
-          {/* <h3>{name}</h3> */}
           {users.map((el) => {
             console.log(el);
             return <h3>{el}</h3>;
           })}
-
-          {/* <h3>People3</h3>
-          <h3>People4</h3>
-          <h3>People5</h3> */}
         </div>
         <div className="messages-wrapper">
           <InfoBar room={room} />

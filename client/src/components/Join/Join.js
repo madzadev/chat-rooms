@@ -10,7 +10,7 @@ const Join = () => {
   return (
     <div className="joinOuterContainer">
       <div className="joinInnerContainer">
-        <h1 className="heading">New Room</h1>
+        <h1 className="heading">Log In</h1>
         <div>
           <input
             className="joinInput"
@@ -32,7 +32,7 @@ const Join = () => {
           to={`/chat?name=${name}&room=${room}`}
         >
           <button className="button mt-20" type="submit">
-            Create
+            Log In
           </button>
         </Link>
       </div>
