@@ -27,6 +27,16 @@
   color: rgb(29, 29, 29);
 }
 
+.list-user {
+  background-color: rgb(223, 223, 223);
+  padding: 10px;
+}
+
+.list-user:hover {
+  background-color: rgb(216, 216, 216);
+  cursor: pointer;
+}
+
 @media (min-width: 320px) and (max-width: 480px) {
   .outerContainer {
     height: 100%;
