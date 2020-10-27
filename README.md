@@ -2,7 +2,7 @@
 
 Real time chat app built with React, Express and Socket.io.
 
-![Calculator Screenshot](/public/preview.png?raw=true "Preview")
+![Chat](https://i.imgur.com/BxI8MOz.png)
 
 ## Installation
 
@@ -10,9 +10,9 @@ Real time chat app built with React, Express and Socket.io.
 
 2. `cd socket.io-chat`
 
-3. `cd client && npm install`
+3. Install client and server `npm install`
 
-4. `cd server && npm install`
+4. Start the server `npm run server` and frontend `npm start`
 
 ## Contributions
 
