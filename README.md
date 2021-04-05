@@ -4,15 +4,24 @@ Real time chat app built with React, Express and Socket.io.
 
 ![Chat](https://i.imgur.com/BxI8MOz.png)
 
+## Features
+
+1.Log-in screen
+2.Online users list
+3.Input field
+4.Message board
+5.Chat bot messages
+6.Connecting via room name
+
 ## Installation
 
-1. `git clone https://github.com/madzadev/socket.io-chat.git`
+1. `git clone https://github.com/madzadev/chat.git`
 
-2. `cd socket.io-chat`
+2. `cd chat`
 
-3. Install client and server `npm install`
+3. Install and run server `cd server && npm install` and `npm run server`
 
-4. Start the server `npm run server` and frontend `npm start`
+4. Install and run client `cd client && npm install` and `npm start`
 
 ## Contributions
 
