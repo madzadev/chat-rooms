@@ -19,9 +19,9 @@ Real time chat app built with React, Express and Socket.io.
 
 2. `cd chat`
 
-3. Install and run server `cd server && npm install` and `npm run server`
+3. `cd server && npm install` and `npm run server`
 
-4. Install and run client `cd client && npm install` and `npm start`
+4. `cd client && npm install` and `npm start`
 
 ## Contributions
 
