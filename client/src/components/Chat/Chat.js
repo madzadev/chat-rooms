@@ -68,8 +68,12 @@ const Chat = ({ location }) => {
       <div className="chat-wrapper">
         <div className="list-wrapper">
           <h2>Users online: {users.length}</h2>
-          {users.map((el) => {
-            return <h3 className="list-user">{el}</h3>;
+          {users.map((el, index) => {
+            return (
+              <h3 className="list-user" key={index}>
+                {el}
+              </h3>
+            );
           })}
         </div>
         <div className="messages-wrapper">

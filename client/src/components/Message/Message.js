@@ -7,11 +7,14 @@ import "./Message.css";
 
 const Message = ({ message: { user, text }, name }) => {
   let isSentByCurrentUser = false;
-  const trimmedName = name.trim().toLowerCase();
+  let isSentByAdmin = false;
 
-  if (user === trimmedName) {
+  if (user === "admin") {
+    isSentByAdmin = true;
+  } else if (user.toLowerCase() === name.toLowerCase()) {
     isSentByCurrentUser = true;
   }
+
   return isSentByCurrentUser ? (
     <div className="messageContainer justifyEnd">
       <div className="messageBox backgroundOrange">
@@ -26,7 +29,11 @@ const Message = ({ message: { user, text }, name }) => {
     <div className="messageContainer justifyStart">
       {/* <p className="sentText pr-10">{user}</p> */}
       <div className="profile-box robot">
-        <img className="profile-icon" src={RobotIcon} alt="img" />
+        <img
+          className="profile-icon"
+          src={isSentByAdmin ? RobotIcon : ProfileIcon}
+          alt="img"
+        />
       </div>
       <div className="messageBox backgroundLight">
         <p className="messageText colorDark">{ReactEmoji.emojify(text)}</p>
