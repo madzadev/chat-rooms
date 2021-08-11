@@ -6,3 +6,9 @@
   overflow: auto;
   flex: auto;
 }
+
+@media only screen and (max-width: 750px) {
+  .messages {
+    height: 70vh;
+  }
+}
