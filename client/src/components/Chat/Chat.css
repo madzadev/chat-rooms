@@ -15,7 +15,6 @@
   grid-template-columns: 1fr 3fr;
   width: 1200px;
   margin: 0 auto;
-  border: 1px solid var(--grey-color);
   background-color: white;
   height: 70vh;
 }
