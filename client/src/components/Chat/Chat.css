@@ -17,6 +17,7 @@
   margin: 0 auto;
   background-color: white;
   height: auto;
+  border-radius: 20px;
 }
 
 .list-wrapper {
@@ -24,6 +25,7 @@
   background-color: var(--background-color);
   background-color: rgb(233, 233, 233);
   color: rgb(29, 29, 29);
+  border-radius: 20px 0 0 20px;
 }
 
 .list-user {

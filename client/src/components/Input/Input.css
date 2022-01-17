@@ -11,7 +11,7 @@
 
 .input {
   border: none;
-  border-radius: 40px;
+  border-radius: 20px;
   padding: 0 20px;
   width: 80%;
   height: 60px;
@@ -19,6 +19,7 @@
   /* font-size: 1.2em; */
   background-color: rgb(241, 241, 241);
   font-size: 0.9em;
+  margin-right: 10px;
 }
 
 input:focus,
