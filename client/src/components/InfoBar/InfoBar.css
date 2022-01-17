@@ -7,7 +7,7 @@
   background: var(--purple-color);
   height: 60px;
   width: 100%;
-  border-top-right-radius: 20px;
+  /* border-top-right-radius: 20px; */
 }
 
 .leftInnerContainer {
