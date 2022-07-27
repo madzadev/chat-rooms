@@ -25,7 +25,7 @@ Real time chat app built with React, Express and Socket.io.
 
 ## Contributions
 
-Any feature requests and pull requests are welcome!
+Any feature requests and pull requests are welcome!!
 
 ## License
 
