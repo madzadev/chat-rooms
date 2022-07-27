@@ -22,12 +22,10 @@ const Message = ({ message: { user, text }, name }) => {
       </div>
       <div className="profile-box user">
         <img className="profile-icon" src={ProfileIcon} alt="img" />
-        {/* <p className="sentText pl-10">{trimmedName}</p> */}
       </div>
     </div>
   ) : (
     <div className="messageContainer justifyStart">
-      {/* <p className="sentText pr-10">{user}</p> */}
       <div className="profile-box robot">
         <img
           className="profile-icon"

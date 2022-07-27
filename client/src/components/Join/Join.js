@@ -36,9 +36,6 @@ const Join = () => {
           </button>
         </Link>
       </div>
-      {/* <div className="rooms-list">
-        <h1>Created rooms:</h1>
-      </div> */}
     </div>
   );
 };
